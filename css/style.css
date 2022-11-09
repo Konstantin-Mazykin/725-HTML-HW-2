@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.stunning-spots {
+    background-color: #232428;
+    --color-main-text: #ffffff99;
+    --color-quote: #ffffff;
+}
+.stunning-spots__title {
+    color: var(--color-main-text);
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    font-style: normal;
+}
+.red-line {
+    color: #ee2e14;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+}
+.stunning-spots__header-text {
+    color: var(--color-quote);
+    font-family: "Playfair Display", sans-serif;
+    font-size: 34px;
+    font-weight: 700;
+    font-style: normal;
+}
+.text-dark {
+    color: #505155;
+}
+.stunning-spots__quote-text {
+    color: var(--color-quote);
+    font-family: "Playfair Display", sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    font-style: normal;
+}
+.stunning-spots__main-text, .stunning-spots__quote-autor {
+    color: var(--color-main-text);
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: normal;
+}
+.stunning-spots__double-quotes {
+    width: 50px;
+}
+.stunning-spots__quote {
+    margin-left: auto;
+    margin-right: auto;
+    width: 594px;
+    text-align: center;
+}
