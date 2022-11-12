@@ -1,0 +1,45 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap);
+
+:root {
+  font-family: Roboto, sans-serif;
+  /* Variables */
+  --sign-start-color: #ee2e14; /*Колір червоної лінії на початку розділу*/
+  --background-dark: #232428; /*Колір фону темних блоків*/
+  --chapter-font-color: #6f7380; /*Колір шрифту назви блоку у світлих блоках */
+  --chapter-font-color-light: #ffffff99; /*Колір шрифту назви блоку у темних блоках*/
+  --title-font-color: #505155; /*Колір заголовку всередині блоку (для всіх блоків)*/
+  --title-font-color-light: #fff; /*Колір частини тексту заголовку у темних блоках*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.sign-start-chapter {
+  color: var(--sign-start-color);
+  font-size: 12px;
+}
+.chapter-font-name {
+  color: var(--chapter-font-color);
+  font-size: 13px;
+  font-weight: 500;
+}
+.chapter-font-name-light {
+  color: var(--chapter-font-color-light);
+  font-size: 13px;
+  font-weight: 500;
+}
+.title-font-light {
+  color: var(--title-font-color-light);
+  font-family: "Playfair Display", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+}
+.title-font {
+  color: var(--title-font-color);
+  font-family: "Playfair Display", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+}
