@@ -11,7 +11,7 @@
 }
 .stunning-spots__main-text {
     width: 100%;
-    line-height: 2;
+    line-height: 1.7;
     padding-top: 4em;
     padding-bottom: 3em;
 }
@@ -37,7 +37,10 @@
     background-color: var(--title-font-color);
     border-color: transparent;
     border-radius: 50%;
-    margin: 2em 0.5em 2em 0.5em;
+    margin: 2em 0.5em 5em 0.5em;
+}
+.carousel-indicators [type="button"]:hover {
+    background-color: var(--title-font-color-light);
 }
 .stunning-spots__main-text, .stunning-spots__quote-autor {
     color: var(--chapter-font-color-light);
