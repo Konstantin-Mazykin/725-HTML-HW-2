@@ -37,7 +37,7 @@
     background-color: var(--title-font-color);
     border-color: transparent;
     border-radius: 50%;
-    margin: 2em 0.5em 5em 0.5em;
+    margin: 2em 0.6em 5em 0.6em;
 }
 .carousel-indicators [type="button"]:hover {
     background-color: var(--title-font-color-light);
