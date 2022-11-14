@@ -77,10 +77,10 @@
             Complete the form below, and we will contact you soon to discuss the details!
           </p>
           <form class="contact-us__form" action="https://formspree.io/f/mlevzdev" method="POST">
-            <input type="text" name="user-name" placeholder="Your Name" required>
+            <input class="user-name" type="text" name="user-name" placeholder="Your Name" required>
             <input type="tel" name="user-phone" placeholder="Your Phone" required>
             <input type="email" name="user-emeil" placeholder="Your Email" required>
-            <input id="contact-us__date" type="text" onfocus="this.type='date'" placeholder="Choose date">
+            <input type="text" placeholder="Choose date" onfocus="(this.type='date')" onblur="(this.type='text')">
             <input type="submit" value="Request a quote">
           </form>
         </div>
