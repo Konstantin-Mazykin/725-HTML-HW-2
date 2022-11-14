@@ -2,12 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guided Tour</title>
   <link rel="stylesheet" type="text/css" href="css/index.css">
-  <link rel="shortcut icon" href="img/norway-icon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/norway-icon.png" type="image/x-icon">
 </head>
 
 <body>
@@ -31,7 +31,8 @@
         <img class="stunning-spots__carousel-img" src="img/port-in-norway.jpg" alt="Port in Norway">
         <img class="stunning-spots__carousel-img" src="img/iceberg-in-the-sea.jpg" alt="Iceberg in the sea">
         <img class="stunning-spots__carousel-img" src="img/man-on-the-rock.jpg" alt="Man on the rock">
-        <img class="stunning-spots__carousel-img" src="img/observation-deck-on-the-fjords.jpg" alt="Observation deck on the fjords">
+        <img class="stunning-spots__carousel-img" src="img/observation-deck-on-the-fjords.jpg"
+          alt="Observation deck on the fjords">
         <img class="stunning-spots__carousel-img" src="img/village-by-the-lake.jpg" alt="Village by the lake">
         <img class="stunning-spots__carousel-img" src="img/red-houses-on-the-beach.jpg" alt="Red houses on the beach">
       </div>
@@ -61,38 +62,29 @@
       </div>
     </div>
   </section>
-  <!-- Дополнительный блок Блок №7 -->
-  <section class="faq">
-    <h2> <span>━</span> FAQ</h2>
-    <div class="faq__text">
-      <h3 class="faq__header-text-bright"><span class="text-bright">Explore our expertly </span>crafted tours</h3>
-      <p class="faq__main-text">We tried to make our Norway tour as comfortable and interesting as possible.
-        If you still have questions, you can contact us directly or fill out the form below.</p>
-    </div>
-    <div class="faq__accordion">
-      <details class="faq__accordion-detail-01">
-        <summary>Does this tour require physical fitness?</summary>
-        This tour is suitable for untrained tourists. No cliff climbing, we promise.
-      </details>
-      <details class="faq__accordion-detail-02">
-        <summary>Will I be able to see the Northern Lights?</summary>
-        We cannot promise you this. The Northern Lights only appear in winter under special circumstances.
-        But we will hunt it in Tromsø.
-      </details>
-      <details class="faq__accordion-detail-03">
-        <summary>Can I take my children with me on the tour?</summary>
-        Yes, we offer a 50% discount for children.
-      </details>
-      <details class="faq__accordion-detail-04">
-        <summary>Can I join you not in Oslo, but in another city?</summary>
-        Depending on the weather conditions, our route may change, so we strongly recommend starting with
-        other tourists from Oslo.
-        We do not change the route to pick up tourists on the way.
-      </details>
-    </div>
-    <div class="faq__image">
-      <img class="faq__image-man" height="200" src="img/man-with-backpack-in-the-mountains.jpg"
-        alt="Man with a backpack in the mountains">
+  <!-- Дополнительный блок Блок №8 -->
+  <section class="contact-us">
+    <div class="contact-us_container">
+      <div class="contact-us__content">
+        <h2 class="chapter-font-name-light">
+          <span class="sign-start-chapter">━</span> CONTACT US
+        </h2>
+        <div class="contact-us__text">
+          <h3 class="contact-us__header-text">
+            <span class="title-font-light"> Book your journey!
+          </h3>
+          <p class="contact-us__main-text">
+            Complete the form below, and we will contact you soon to discuss the details!
+          </p>
+          <form class="contact-us__form" action="https://formspree.io/f/mlevzdev" method="POST">
+            <input type="text" name="user-name" placeholder="Your Name" required>
+            <input type="tel" name="user-phone" placeholder="Your Phone" required>
+            <input type="email" name="user-emeil" placeholder="Your Email" required>
+            <input id="contact-us__date" type="text" onfocus="this.type='date'" placeholder="Choose date">
+            <input type="submit" value="Request a quote">
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 </body>
