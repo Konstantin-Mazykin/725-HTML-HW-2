@@ -1,0 +1,42 @@
+.faq {
+    background-color: var(--background-dark);
+}
+
+.faq__container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 120px 15px 90px 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__content, .faq__accordion {
+    display: block;
+    width: 100%;
+}
+
+.faq__image {
+    width: 100%;
+}
+
+.faq__image-man {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 7 / 8;
+    object-fit: cover;
+    object-position: 40% 50%;
+}
+
+@media (min-width: 760px) {
+    .faq__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .faq__image,
+    .faq__content {
+        width: 45%;
+    }
+
+}

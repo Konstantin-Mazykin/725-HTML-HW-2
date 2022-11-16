@@ -4,7 +4,7 @@
 .stunning-spots__content {
     max-width: 1200px;
     margin: auto;
-    padding: 120px 15px 90px 15px;
+    padding: 120px 15px 2px 15px;
 }
 .stunning-spots__text {
     margin-top: 1em;
@@ -88,6 +88,7 @@
     border-color: transparent;
     border-radius: 50%;
     margin: 1em 0.6em 10em 0.6em;
+    transition: 0.3s all;
 }
 .carousel-indicators [type="button"]:hover {
     background-color: var(--title-font-color-light);
