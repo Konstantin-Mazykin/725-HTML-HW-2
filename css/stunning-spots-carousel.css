@@ -1,0 +1,70 @@
+.carousel-indicators {
+    text-align: center;
+}
+.carousel-indicators [type="button"] {
+    width: 11px;
+    height: 11px;
+    background-color: var(--title-font-color);
+    border-color: transparent;
+    border-radius: 50%;
+    margin: 3em 0.6em 7em 0.6em;
+    transition: 0.3s all;
+}
+.carousel-indicators [type="button"]:hover {
+    background-color: var(--title-font-color-light);
+}
+/*.stunning-spots_carousel {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.stunning-spots__carousel-img {
+    display: block;
+    width: 370px;
+    height: 332px;
+    object-fit: cover;
+    object-position: 50% 70%;
+    margin-bottom: 1.7em;
+}*/
+
+.stunning-spots__carousel_btn-prev, .stunning-spots__carousel_btn-next {
+    border-color: transparent;
+    background-color: var(--background-dark);
+    border-color: transparent;
+    font-size: 35px;
+    color: var(--title-font-color);
+    transition: 0.3s all;
+}
+
+.stunning-spots__carousel_btn-prev {
+    margin-right: 10px;
+}
+
+.stunning-spots__carousel_btn-prev:hover, .stunning-spots__carousel_btn-next:hover {
+    color: var(--title-font-color-light);
+}
+
+.stunning-spots__carousel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stunning-spots__carousel_slide-container {
+    display: flex;
+}
+
+.stunning-spots__carousel_slide-container img {
+    display: block;
+    max-width: 98%;
+    max-height: 350px;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+    object-position: 50% 70%;
+    
+    /*max-width: 100%;
+    margin: auto;*/
+}
