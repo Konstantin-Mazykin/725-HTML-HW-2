@@ -1,8 +1,46 @@
+.stunning-spots__carousel {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stunning-spots__carousel_btn-prev,
+.stunning-spots__carousel_btn-next {
+    border-color: transparent;
+    background-color: var(--background-dark);
+    border-color: transparent;
+    font-size: 35px;
+    color: var(--title-font-color);
+    transition: 0.3s all;
+}
+
+.stunning-spots__carousel_btn-prev:hover,
+.stunning-spots__carousel_btn-next:hover {
+    color: var(--title-font-color-light);
+}
+
+.stunning-spots__carousel_btn-next {
+    margin-left: -10px;
+}
+
+.stunning-spots__carousel_slide-container {
+    display: flex;
+}
+
+.stunning-spots__carousel_slide-container img {
+    display: block;
+    width: 98%;
+    max-height: 300px;
+    aspect-ratio: 5 / 4;
+    object-fit: cover;
+    object-position: 50% 70%;
+}
+
 .carousel-indicators {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 200px;
-    margin: 3em auto 5em auto;
+    margin: 2.5em auto 7em auto;
 }
 
 .carousel-indicators [type="button"] {
@@ -16,41 +54,4 @@
 
 .carousel-indicators [type="button"]:hover {
     background-color: var(--title-font-color-light);
-}
-
-.stunning-spots__carousel_btn-prev,
-.stunning-spots__carousel_btn-next {
-    border-color: transparent;
-    background-color: var(--background-dark);
-    border-color: transparent;
-    font-size: 35px;
-    color: var(--title-font-color);
-    transition: 0.3s all;
-}
-
-.stunning-spots__carousel_btn-next {
-    margin-left: -10px;
-}
-
-.stunning-spots__carousel_btn-prev:hover,
-.stunning-spots__carousel_btn-next:hover {
-    color: var(--title-font-color-light);
-}
-
-.stunning-spots__carousel {
-    display: flex;
-    justify-content: space-between;
-}
-
-.stunning-spots__carousel_slide-container {
-    display: flex;
-}
-
-.stunning-spots__carousel_slide-container img {
-    display: block;
-    max-width: 98%;
-    max-height: 360px;
-    aspect-ratio: 5 / 4;
-    object-fit: cover;
-    object-position: 50% 70%;
 }
