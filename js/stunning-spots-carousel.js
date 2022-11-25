@@ -33,7 +33,7 @@
         if (currentSlideIdx < 0) currentSlideIdx = slides.length - 1;
         renderSlide();
     }
-    
+
     function getValue(btn) {
         currentSlideIdx = parseInt(btn.target.value) - 1;
         renderSlide();

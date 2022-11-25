@@ -1,9 +1,10 @@
 .carousel-indicators {
     display: flex;
     justify-content: space-around;
-    width: 20%;
+    width: 200px;
     margin: 3em auto 5em auto;
 }
+
 .carousel-indicators [type="button"] {
     width: 11px;
     height: 11px;
@@ -12,11 +13,13 @@
     border-radius: 50%;
     transition: 0.3s all;
 }
+
 .carousel-indicators [type="button"]:hover {
     background-color: var(--title-font-color-light);
 }
 
-.stunning-spots__carousel_btn-prev, .stunning-spots__carousel_btn-next {
+.stunning-spots__carousel_btn-prev,
+.stunning-spots__carousel_btn-next {
     border-color: transparent;
     background-color: var(--background-dark);
     border-color: transparent;
@@ -25,11 +28,12 @@
     transition: 0.3s all;
 }
 
-.stunning-spots__carousel_btn-prev {
-    margin-right: 10px;
+.stunning-spots__carousel_btn-next {
+    margin-left: -10px;
 }
 
-.stunning-spots__carousel_btn-prev:hover, .stunning-spots__carousel_btn-next:hover {
+.stunning-spots__carousel_btn-prev:hover,
+.stunning-spots__carousel_btn-next:hover {
     color: var(--title-font-color-light);
 }
 
@@ -45,11 +49,11 @@
 .stunning-spots__carousel_slide-container img {
     display: block;
     max-width: 98%;
-    max-height: 350px;
+    max-height: 360px;
     aspect-ratio: 5 / 4;
     object-fit: cover;
     object-position: 50% 70%;
-    
+
     /*max-width: 100%;
     margin: auto;*/
 }
