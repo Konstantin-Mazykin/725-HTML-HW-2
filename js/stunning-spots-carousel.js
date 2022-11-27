@@ -17,7 +17,7 @@
     function creatingArrayOfImages (pictures) {
         const arrayOfImages = [];
         for (const picture of pictures) {
-            let valueOfArray = '<div><img src="${picture.image}" alt="${picture.title}"></div>'
+            let valueOfArray = `<div><img src="${picture.image}" alt="${picture.title}"></div>`
             arrayOfImages.push(valueOfArray);
         }
         return arrayOfImages;
