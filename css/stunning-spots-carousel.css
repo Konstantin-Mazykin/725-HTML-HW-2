@@ -1,6 +1,7 @@
 .stunning-spots__carousel {
     display: flex;
     justify-content: space-between;
+    min-height: 220px;
 }
 
 .stunning-spots__carousel_btn-prev,
@@ -28,7 +29,7 @@
 
 .stunning-spots__carousel_slide-container img {
     display: block;
-    width: 98%;
+    max-width: 98%;
     max-height: 300px;
     aspect-ratio: 5 / 4;
     object-fit: cover;
@@ -43,7 +44,7 @@
     margin: 2.5em auto 7em auto;
 }
 
-.carousel-indicators [type="button"] {
+.carousel-indicators button {
     width: 11px;
     height: 11px;
     background-color: var(--title-font-color);
@@ -52,6 +53,10 @@
     transition: 0.3s all;
 }
 
-.carousel-indicators [type="button"]:hover {
+.carousel-indicators button:hover {
+    background-color: var(--title-font-color-light);
+}
+
+.carousel-indicators #push_button {
     background-color: var(--title-font-color-light);
 }
