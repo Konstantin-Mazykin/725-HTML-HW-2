@@ -1,9 +1,7 @@
-(async () => {
+(async() => {
 
     const response = await fetch('api/norway-landscapes.json');
     const pictures = await response.json();
-
-    let currentSlideIdx = 0;
 
     function creatingArrayOfImages (pictures) {
         const arrayOfImages = [];
@@ -14,6 +12,8 @@
     }
 
     const slides = creatingArrayOfImages (pictures);
+
+    let currentSlideIdx = 0;
 
     function renderSlide() {
         const slideContainer = document.querySelector('.stunning-spots__carousel .stunning-spots__carousel_slide-container');
@@ -59,7 +59,7 @@
     }
 
     renderSlide();
-    
+ 
     const nextButton = document.querySelector('.stunning-spots__carousel .stunning-spots__carousel_btn-next');
     nextButton.addEventListener('click', nextSlide);
 
