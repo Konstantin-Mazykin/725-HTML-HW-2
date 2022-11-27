@@ -1,7 +1,7 @@
 .stunning-spots__carousel {
     display: flex;
     justify-content: space-between;
-    min-height: 220px;
+    min-height: 200px;
 }
 
 .stunning-spots__carousel_btn-prev,
@@ -30,7 +30,7 @@
 .stunning-spots__carousel_slide-container img {
     display: block;
     max-width: 98%;
-    max-height: 294px;
+    max-height: 300px;
     aspect-ratio: 5 / 4;
     object-fit: cover;
     object-position: 50% 70%;
