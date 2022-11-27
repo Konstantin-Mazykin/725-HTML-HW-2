@@ -17,13 +17,13 @@
     function creatingArrayOfImages (pictures) {
         const arrayOfImages = [];
         for (const picture of pictures) {
-            let valueOfArray = '<div><img src="${pictures.image}" alt="${pictures.title}"></div>'
+            let valueOfArray = '<div><img src="${picture.image}" alt="${picture.title}"></div>'
             arrayOfImages.push(valueOfArray);
         }
         return arrayOfImages;
     }
 
-    const slides = creatingArrayOfImages (images);
+    const slides = creatingArrayOfImages (pictures);
     console.log(slides);
 
     function renderSlide() {
