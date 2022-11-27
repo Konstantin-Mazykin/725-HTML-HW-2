@@ -1,7 +1,7 @@
 (async () => {
 
     const response = await fetch('api/norway-landscapes.json');
-    const images = await response.json();
+    const pictures = await response.json();
 
     /*const slides = [
         '<div><img src="img/port-in-norway-sm.jpg" alt="Port in Norway"></div>',
@@ -14,10 +14,11 @@
 
     let currentSlideIdx = 0;
 
-    function creatingArrayOfImages (images) {
+    function creatingArrayOfImages (pictures) {
         const arrayOfImages = [];
-        for (const image of images) {
-            arrayOfImages.push('<div><img src="${images.image}" alt="${images.title}"></div>');
+        for (const picture of pictures) {
+            let valueOfArray = '<div><img src="${pictures.image}" alt="${pictures.title}"></div>'
+            arrayOfImages.push(valueOfArray);
         }
         return arrayOfImages;
     }
