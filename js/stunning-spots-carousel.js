@@ -13,8 +13,10 @@
     ];*/
 
     let currentSlideIdx = 0;
-
-    function creatingArrayOfImages (pictures) {
+    renderSlide();
+    renderButtons();
+ 
+    function creatingArrayOfImages(pictures) {
         const arrayOfImages = [];
         for (const picture of pictures) {
             let valueOfArray = `<div><img src="${picture.image}" alt="${picture.title}"></div>`
@@ -23,8 +25,7 @@
         return arrayOfImages;
     }
 
-    const slides = creatingArrayOfImages (pictures);
-    console.log(slides);
+    const slides = creatingArrayOfImages(pictures);
 
     function renderSlide() {
         const slideContainer = document.querySelector('.stunning-spots__carousel .stunning-spots__carousel_slide-container');
@@ -37,7 +38,6 @@
                 slideContainer.innerHTML += slides[thirdSlideIdx];
             }
         }
-        renderButtons();
     }
 
     function renderButtons() {
@@ -69,8 +69,6 @@
         renderSlide();
     }
 
-    renderSlide();
-    
     const nextButton = document.querySelector('.stunning-spots__carousel .stunning-spots__carousel_btn-next');
     nextButton.addEventListener('click', nextSlide);
 
