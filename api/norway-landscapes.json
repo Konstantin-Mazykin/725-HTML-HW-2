@@ -1,0 +1,33 @@
+[
+    {
+       "id":"0",
+       "title":"Port in Norway",
+       "image":"img/port-in-norway.jpg"
+    },
+    {
+       "id":"1",
+       "title":"Iceberg in the sea",
+       "image":"img/iceberg-in-the-sea.jpg"
+    },
+    {
+       "id":"2",
+       "title":"Man on the rock",
+       "image":"img/man-on-the-rock.jpg"
+    },
+    {
+       "id":"3",
+       "title":"Observation deck on the fjords",
+       "image":"img/observation-deck-on-the-fjords.jpg"
+    },
+    {
+       "id":"4",
+       "title":"Village by the lake",
+       "image":"img/village-by-the-lake.jpg"
+    },
+    {
+       "id":"5",
+       "title":"Red houses on the beach",
+       "image":"img/red-houses-on-the-beach.jpg"
+    }
+ ]
+ 

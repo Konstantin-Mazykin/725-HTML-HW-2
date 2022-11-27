@@ -1,4 +1,8 @@
-(() => {
+(async () => {
+
+    const response = await fetch('api/norway-landscapes.json');
+    const images = await response.json();
+    console.log(images);
 
     const slides = [
         '<div><img src="img/port-in-norway-sm.jpg" alt="Port in Norway"></div>',
@@ -7,7 +11,6 @@
         '<div><img src="img/observation-deck-on-the-fjords-sm.jpg" alt="Observation deck on the fjords"></div>',
         '<div><img src="img/village-by-the-lake-sm.jpg" alt="Village by the lake"></div>',
         '<div><img src="img/red-houses-on-the-beach-sm.jpg" alt="Red houses on the beach"></div>',
-        '<div><img src="img/man-with-backpack-in-the-mountains.jpg" alt="Man with a backpack in the mountains"></div>',
     ];
 
     let currentSlideIdx = 0;
@@ -23,7 +26,7 @@
                 slideContainer.innerHTML += slides[thirdSlideIdx];
             }
         }
-        renderButtons()
+        renderButtons();
     }
 
     function renderButtons() {
