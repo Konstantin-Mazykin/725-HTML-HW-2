@@ -3,15 +3,6 @@
     const response = await fetch('api/norway-landscapes.json');
     const pictures = await response.json();
 
-    /*const slides = [
-        '<div><img src="img/port-in-norway-sm.jpg" alt="Port in Norway"></div>',
-        '<div><img src="img/iceberg-in-the-sea-sm.jpg" alt="Iceberg in the sea"></div>',
-        '<div><img src="img/man-on-the-rock-sm.jpg" alt="Man on the rock"></div>',
-        '<div><img src="img/observation-deck-on-the-fjords-sm.jpg" alt="Observation deck on the fjords"></div>',
-        '<div><img src="img/village-by-the-lake-sm.jpg" alt="Village by the lake"></div>',
-        '<div><img src="img/red-houses-on-the-beach-sm.jpg" alt="Red houses on the beach"></div>',
-    ];*/
-
     let currentSlideIdx = 0;
     renderSlide();
     renderButtons();
@@ -19,13 +10,13 @@
     function creatingArrayOfImages(pictures) {
         const arrayOfImages = [];
         for (const picture of pictures) {
-            let valueOfArray = `<div><img src="${picture.image}" alt="${picture.title}"></div>`
-            arrayOfImages.push(valueOfArray);
+            arrayOfImages.push(`<div><img src="${picture.image}" alt="${picture.title}"></div>`);
         }
         return arrayOfImages;
     }
 
-    const slides = creatingArrayOfImages(pictures);
+    const slides = creatingArrayOfImages (pictures);
+    console.log(slides);
 
     function renderSlide() {
         const slideContainer = document.querySelector('.stunning-spots__carousel .stunning-spots__carousel_slide-container');

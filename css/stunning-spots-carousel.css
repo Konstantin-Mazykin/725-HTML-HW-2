@@ -1,15 +1,28 @@
 .stunning-spots__carousel {
-    display: flex;
-    justify-content: space-between;
-    min-height: 220px;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.stunning-spots__carousel_btn-prev {
+    position: absolute;
+    left: 2.5%;
+}
+
+.stunning-spots__carousel_btn-next {
+    position: absolute;
+    left: 97.5%;
 }
 
 .stunning-spots__carousel_btn-prev,
 .stunning-spots__carousel_btn-next {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border-color: transparent;
-    background-color: var(--background-dark);
-    border-color: transparent;
-    font-size: 35px;
+    background-color: transparent;
+    text-shadow: 2px 2px 5px var(--chapter-font-color-light), -2px 2px 5px var(--chapter-font-color-light), 2px -2px 5px var(--chapter-font-color-light), -2px -2px 5px var(--chapter-font-color-light);
+    font-size: 40px;
     color: var(--title-font-color);
     transition: 0.3s all;
 }
@@ -17,36 +30,34 @@
 .stunning-spots__carousel_btn-prev:hover,
 .stunning-spots__carousel_btn-next:hover {
     color: var(--title-font-color-light);
-}
-
-.stunning-spots__carousel_btn-next {
-    margin-left: -10px;
+    text-shadow: 3px 3px 7px var(--title-font-color-light), -3px -3px 7px var(--title-font-color-light), -3px 3px 7px var(--title-font-color-light), 3px -3px 7px var(--title-font-color-light);
 }
 
 .stunning-spots__carousel_slide-container {
     display: flex;
+    justify-content: space-between;
 }
 
 .stunning-spots__carousel_slide-container img {
     display: block;
-    max-width: 98%;
-    max-height: 300px;
-    aspect-ratio: 5 / 4;
+    max-width: 100%;
+    height: 330px;
+    aspect-ratio: 8 / 7;
     object-fit: cover;
     object-position: 50% 70%;
 }
 
 .carousel-indicators {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 200px;
     margin: 2.5em auto 7em auto;
 }
 
 .carousel-indicators button {
     width: 11px;
     height: 11px;
+    margin: 0 10px 0 10px;
     background-color: var(--title-font-color);
     border-color: transparent;
     border-radius: 50%;
@@ -55,6 +66,7 @@
 
 .carousel-indicators button:hover {
     background-color: var(--title-font-color-light);
+    box-shadow: 3px 3px 7px var(--title-font-color-light), -3px -3px 7px var(--title-font-color-light), -3px 3px 7px var(--title-font-color-light), 3px -3px 7px var(--title-font-color-light);
 }
 
 .carousel-indicators #push_button {
