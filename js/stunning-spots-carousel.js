@@ -69,4 +69,6 @@
     const selectButton = document.querySelector('.carousel-indicators');
     selectButton.addEventListener('click', getValue);
 
+    window.addEventListener('resize', renderSlide);
+
 })();
