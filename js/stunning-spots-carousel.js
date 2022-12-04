@@ -66,10 +66,25 @@
         const pushPictureID = pict.target.id;
         if (pushPictureID === "") return;
         pictureID = parseInt(pushPictureID.slice(13));
-        console.log(pictureID);
+        viewImageInModalWindow();
+        modalWindow.classList.add('open');
+    }
+
+    function viewImageInModalWindow() {
         const zoomContainer = document.querySelector('.stunning-spots__modal_window_content');
         zoomContainer.innerHTML = slides[pictureID];
-        modalWindow.classList.add('open');
+    }
+
+    function nextImageInModalWindow() {
+        pictureID++;
+        if (pictureID >= slides.length) pictureID = 0;
+        viewImageInModalWindow();
+    }
+
+    function prevImageInModalWindow() {
+        pictureID--;
+        if (pictureID < 0) pictureID = slides.length - 1;
+        viewImageInModalWindow();
     }
 
     function closeModalWindow() {
@@ -87,6 +102,12 @@
 
     const selectPicture = document.querySelector('.stunning-spots__carousel_slide-container');
     selectPicture.addEventListener('click', openModalWindow);
+
+    const nextButtonInModalWindow = document.querySelector('.stunning-spots__modal_window_next');
+    nextButtonInModalWindow.addEventListener('click', nextImageInModalWindow);
+
+    const prevButtonInModalWindow = document.querySelector('.stunning-spots__modal_window_prev');
+    prevButtonInModalWindow.addEventListener('click', prevImageInModalWindow);
 
     const closeModalWindows = document.querySelector('.stunning-spots__modal_window_close');
     closeModalWindows.addEventListener('click', closeModalWindow);

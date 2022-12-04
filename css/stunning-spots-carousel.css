@@ -79,7 +79,7 @@
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     top: 0;
     left: 0;
     opacity: 0;
@@ -101,14 +101,14 @@
 .stunning-spots__modal_window_body {
     min-height: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px 10px;
 }
 
 .stunning-spots__modal_window_content {
     position: relative;
-    min-width: 320px;
+    min-width: 240px;
     opacity: 0;
     transition: all 0.5s ease 0s;
     transform: translate(0px, -100%);
@@ -116,9 +116,17 @@
 }
 
 .stunning-spots__modal_window_content img {
-    width: 880px;
     max-width: 100%;
-    max-height: 100%;
+    max-height: 940px;
+}
+
+.stunning-spots__modal_window_navigation {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    text-align: end;
+    z-index: 1;
 }
 
 .stunning-spots__modal_window_close {
@@ -127,14 +135,36 @@
     background-color: transparent;
     font-size: 25px;
     text-decoration: none;
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    transition: 0.3s all;
-    z-index: 1;
+    margin: 5px 15px;
 }
 
-.stunning-spots__modal_window_close:hover {
+.stunning-spots__modal_window_galery {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 15px;
+}
+
+.stunning-spots__modal_window_prev, .stunning-spots__modal_window_next {
+    color: var(--chapter-font-color);
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 45px;
+}
+
+.stunning-spots__modal_window_prev {
+    transform: rotate(45deg);
+}
+
+.stunning-spots__modal_window_next {
+    transform: rotate(-135deg);
+}
+
+.stunning-spots__modal_window_close:hover, .stunning-spots__modal_window_prev:hover, .stunning-spots__modal_window_next:hover {
     color: var(--title-font-color-light);
     text-shadow: 3px 3px 7px var(--title-font-color-light), -3px -3px 7px var(--title-font-color-light), -3px 3px 7px var(--title-font-color-light), 3px -3px 7px var(--title-font-color-light);
+    transition: 0.3s all;
 }
+
