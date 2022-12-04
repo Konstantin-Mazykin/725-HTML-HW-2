@@ -6,12 +6,13 @@
     function creatingArrayOfImages(pictures) {
         const arrayOfImages = [];
         for (const picture of pictures) {
-            arrayOfImages.push(`<div><img src="${picture.image}" alt="${picture.title}"></div>`);
+            arrayOfImages.push(`<div><img src="${picture.image}" id="carousel_img_${picture.id}" alt="${picture.title}"></div>`);
         }
         return arrayOfImages;
     }
 
     const slides = creatingArrayOfImages(pictures);
+    console.log(slides);
 
     let currentSlideIdx = 0;
 
@@ -60,6 +61,18 @@
 
     renderSlide();
 
+    function openModalWindow(pict) {
+        const pushPictureID = pict.target.id;
+        if (pushPictureID === "") return;
+        pictureID = parseInt(pushPictureID.slice(12));
+        console.log(pictureID);
+
+        //const zoomContainer = document.querySelector('.stunning-spots__modal_window_content');
+        //zoomContainer.innerHTML = slides[pictureID];
+
+        //modalLink.classList.add('open');
+    }
+
     const nextButton = document.querySelector('.stunning-spots__carousel .stunning-spots__carousel_btn-next');
     nextButton.addEventListener('click', nextSlide);
 
@@ -68,6 +81,9 @@
 
     const selectButton = document.querySelector('.carousel-indicators');
     selectButton.addEventListener('click', getValue);
+
+    const selectPicture = document.querySelector('.stunning-spots__carousel_slide-container');
+    selectPicture.addEventListener('click', openModalWindow);
 
     window.addEventListener('resize', renderSlide);
 
