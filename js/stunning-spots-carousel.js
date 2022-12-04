@@ -12,9 +12,10 @@
     }
 
     const slides = creatingArrayOfImages(pictures);
-    console.log(slides);
 
+    const modalWindow = document.querySelector('.stunning-spots__modal_window');
     let currentSlideIdx = 0;
+    let pictureID = 0;
 
     function renderSlide() {
         const slideContainer = document.querySelector('.stunning-spots__carousel .stunning-spots__carousel_slide-container');
@@ -64,13 +65,15 @@
     function openModalWindow(pict) {
         const pushPictureID = pict.target.id;
         if (pushPictureID === "") return;
-        pictureID = parseInt(pushPictureID.slice(12));
+        pictureID = parseInt(pushPictureID.slice(13));
         console.log(pictureID);
+        const zoomContainer = document.querySelector('.stunning-spots__modal_window_content');
+        zoomContainer.innerHTML = slides[pictureID];
+        modalWindow.classList.add('open');
+    }
 
-        //const zoomContainer = document.querySelector('.stunning-spots__modal_window_content');
-        //zoomContainer.innerHTML = slides[pictureID];
-
-        //modalLink.classList.add('open');
+    function closeModalWindow() {
+        modalWindow.classList.remove('open');
     }
 
     const nextButton = document.querySelector('.stunning-spots__carousel .stunning-spots__carousel_btn-next');
@@ -84,6 +87,9 @@
 
     const selectPicture = document.querySelector('.stunning-spots__carousel_slide-container');
     selectPicture.addEventListener('click', openModalWindow);
+
+    const closeModalWindows = document.querySelector('.stunning-spots__modal_window_close');
+    closeModalWindows.addEventListener('click', closeModalWindow);
 
     window.addEventListener('resize', renderSlide);
 
