@@ -21,15 +21,16 @@
     transform: translate(-50%, -50%);
     border-color: transparent;
     background-color: transparent;
-    -webkit-text-stroke: 1px var(--title-font-color-light);
+    -webkit-text-stroke: 1px var(--title-font-color);
     font-size: 45px;
-    color: var(--title-font-color);
+    color: var(--title-font-color-light);
     transition: 0.3s all;
 }
 
 .stunning-spots__carousel_btn-prev:hover,
 .stunning-spots__carousel_btn-next:hover {
     color: var(--title-font-color-light);
+    -webkit-text-stroke: 0;
     text-shadow: 3px 3px 7px var(--title-font-color-light), -3px -3px 7px var(--title-font-color-light), -3px 3px 7px var(--title-font-color-light), 3px -3px 7px var(--title-font-color-light);
 }
 
