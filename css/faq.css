@@ -10,19 +10,89 @@
     flex-direction: column;
 }
 
-.faq__content, .faq__accordion {
-    display: block;
-    width: 100%;
-}
-
-.faq__image {
-    width: 100%;
+.faq__text {
+    margin-top: 1em;
 }
 
 .faq__main-text {
     color: var(--chapter-font-color-light);
     font-size: 19px;
     line-height: 1.5;
+    margin: 2em 0 2em 0;
+}
+
+.faq__content,
+.faq__accordion {
+    display: block;
+    width: 100%;
+}
+
+.faq__accordion-detail {
+    border-bottom: 1px solid var(--title-font-color);
+}
+
+.faq__accordion-body {
+    color: var(--chapter-font-color-light);
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 10px 0 20px 0;
+}
+
+.faq__accordion-title {
+    color: var(--title-font-color-light);
+    cursor: pointer;
+    outline: none;
+    font-size: 17px;
+    padding: 22px 0 22px 35px;
+    position: relative;
+}
+
+.faq__accordion-title::before {
+    display: block;
+    content: '🞡';
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-55%);
+}
+
+.faq__accordion-detail[open] .faq__accordion-title::before {
+    content: '—';
+    font-size: 22px;
+    transform: translateY(-50%);
+}
+
+.faq__accordion-detail[open] {
+    animation: slide .3s ease-in-out;
+}
+
+/* Убираем стандартный маркер Chrome */
+.faq__accordion-title::-webkit-details-marker {
+    display: none;
+}
+
+/* Убираем стандартный маркер Firefox */
+details>.faq__accordion-title {
+    list-style: none;
+}
+
+.faq__accordion-detail[open] .faq__accordion-body {
+    animation: accordionOpen .7s ease-in-out;
+}
+
+@keyframes accordionOpen {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.faq__image {
+    width: 100%;
 }
 
 .faq__image-man {
@@ -44,5 +114,5 @@
     .faq__content {
         width: 45%;
     }
-
 }
+
