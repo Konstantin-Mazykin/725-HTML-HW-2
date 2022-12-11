@@ -68,7 +68,6 @@ background-attachment: fixed;
     border: transparent;
     outline: none;
     color: var(--chapter-font-color-light);
-    font-weight: bold;
     cursor: pointer;
     transition: 0.5s all;
 }
