@@ -117,7 +117,7 @@
 
 .stunning-spots__modal_window_content img {
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 98vh;
 }
 
 .stunning-spots__modal_window_navigation {
@@ -140,7 +140,7 @@
 
 .stunning-spots__modal_window_galery {
     width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;

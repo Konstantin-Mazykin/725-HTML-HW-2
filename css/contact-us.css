@@ -60,7 +60,7 @@ background-attachment: fixed;
 }
 .contact-us__form input {
     background-color: #2d2e34;
-    font-size: 15px;
+    font-size: 14px;
     padding-left: 1em;
     height: 3em;
     margin-top: 0.8em;
@@ -74,6 +74,7 @@ background-attachment: fixed;
 }
 .contact-us__form input:focus {
     border: 1px solid #14a9ee;
+    border-radius: 5px;
 }
 .contact-us__form [type="submit"] {
     background-color: #14a9ee;
