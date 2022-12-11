@@ -67,12 +67,12 @@
     animation: slide .3s ease-in-out;
 }
 
-/* Убираем стандартный маркер Chrome */
+/* Забираємо стандартний маркер Chrome */
 .faq__accordion-title::-webkit-details-marker {
     display: none;
 }
 
-/* Убираем стандартный маркер Firefox */
+/* Забираємо стандартний маркер Firefox */
 details>.faq__accordion-title {
     list-style: none;
 }
